@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/base_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/main_background"
+        android:orientation="vertical">
+        <include android:id="@+id/top_bar_layout" layout="@layout/top_bar"/>
+        <include android:id="@+id/pan_layout" layout="@layout/pan"/>
+        <include android:id="@+id/name_select_layout" layout="@layout/name_select"/>
+    </LinearLayout>
+
+    <include android:id="@+id/answer_right" layout="@layout/answer_right"/>
+
+    <include android:id="@+id/float_buttons" layout="@layout/float_buttons"/>
+</FrameLayout>

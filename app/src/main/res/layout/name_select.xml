@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginTop="50dp">
+
+    <LinearLayout
+        android:id="@+id/blanks"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal"/>
+
+    <View
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="@color/white"/>
+
+    <com.example.leidong.guesssongs.myui.MyGridView
+        android:id="@+id/mygridview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:numColumns="8"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:horizontalSpacing="2dp"
+        android:paddingLeft="2dp"
+        android:paddingRight="2dp"/>
+
+</LinearLayout>
